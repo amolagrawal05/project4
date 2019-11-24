@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87df470d-64d8-461c-b65b-e801eae19e6f" name="Default Changelist" comment="" />
+    <list default="true" id="87df470d-64d8-461c-b65b-e801eae19e6f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frozenlake.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozenlake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hiivemdptoolbox/hiive/mdptoolbox/mdp.py" beforeDir="false" afterPath="$PROJECT_DIR$/hiivemdptoolbox/hiive/mdptoolbox/mdp.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +102,7 @@
       <workItem from="1574252185110" duration="3638000" />
       <workItem from="1574339814697" duration="4988000" />
       <workItem from="1574392424086" duration="34187000" />
-      <workItem from="1574484913429" duration="30366000" />
+      <workItem from="1574484913429" duration="31742000" />
     </task>
     <servers />
   </component>

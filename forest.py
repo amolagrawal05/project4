@@ -41,7 +41,7 @@ def plot_graph(data, xlabel, ylabel, title):
 
     return
 
-
+# retrieved from https://github.com/ishanb97/Q-Learning-FrozenLake/blob/master/QLearningAlgorithmFrozenLake.ipynb/
 def plot_reward(data_list, episode, label, title):
 
     data_per_thousand_episodes = np.split(np.array(data_list), episode / 1000)
@@ -93,26 +93,29 @@ def plot_heatmap(policy, title):
 
 if __name__ == '__main__':
 
+    # retrieved from https://pymdptoolbox.readthedocs.io/en/latest/api/example.html
     P, R = example.forest(2000)
     episode = 10000
 
-    #pi = mdp.PolicyIteration(P, R, 0.9)
-    #vi = mdp.ValueIteration(P, R, 0.9, epsilon=1e-7)
+    # retrieved from https://github.com/hiive/hiivemdptoolbox
+    pi = mdp.PolicyIteration(P, R, 0.9)
+    vi = mdp.ValueIteration(P, R, 0.9, epsilon=1e-7)
     ql = mdp.QLearning(P, R, 0.9, alpha=0.2, epsilon=0.9, n_iter=episode)
 
-    # pi_stats = pi.run()
-    # vi_stats = vi.run()
+    pi_stats = pi.run()
+    vi_stats = vi.run()
     ql_stats = ql.run()
 
-    # plot_heatmap(np.array(pi.policy).reshape(50, 40), 'forest: policy iteration heatmap')
-    # plot_heatmap(np.array(vi.policy).reshape(50, 40), 'forest: value iteration heatmap')
+    # retrieved from https://seaborn.pydata.org/generated/seaborn.heatmap.html
+    plot_heatmap(np.array(pi.policy).reshape(50, 40), 'forest: policy iteration heatmap')
+    plot_heatmap(np.array(vi.policy).reshape(50, 40), 'forest: value iteration heatmap')
     plot_heatmap(np.array(ql.policy).reshape(50, 40), 'forest: q learning heatmap')
 
-    # fun(pi_stats, 'policy iteration')
-    # fun(vi_stats, 'value iteration')
+    fun(pi_stats, 'policy iteration')
+    fun(vi_stats, 'value iteration')
     fun(ql_stats, 'q learning')
 
-
+    # retrieved from https://github.com/hiive/hiivemdptoolbox
     ql1 = mdp.QLearning(P, R, 0.9, alpha=0.2, epsilon=0.3, n_iter=episode)
     ql2 = mdp.QLearning(P, R, 0.9, alpha=0.2, epsilon=0.6, n_iter=episode)
     ql3 = mdp.QLearning(P, R, 0.9, alpha=0.2, epsilon=0.9, n_iter=episode)
@@ -134,6 +137,7 @@ if __name__ == '__main__':
     reward5, time5, error5 = data_process(ql5_stats)
     reward6, time6, error6 = data_process(ql6_stats)
 
+    # retrieved from https://github.com/ishanb97/Q-Learning-FrozenLake/blob/master/QLearningAlgorithmFrozenLake.ipynb/
 
     data_per_thousand_episode4 = np.split(np.array(error4), episode / 1000)
 
@@ -205,5 +209,5 @@ if __name__ == '__main__':
     plt.xlabel('number of iterations (in thousands)')
     plt.ylabel('error')
     plt.legend(loc='best')
-    plt.savefig('forest : number of iterations vs error : q learning')
+    plt.savefig('forest(expr) : number of iterations vs error : q learning')
     plt.clf()
