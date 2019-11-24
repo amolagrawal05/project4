@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87df470d-64d8-461c-b65b-e801eae19e6f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.odt" beforeDir="false" afterPath="$PROJECT_DIR$/README.odt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aagrawal339-analysis.odt" beforeDir="false" afterPath="$PROJECT_DIR$/aagrawal339-analysis.odt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hiivemdptoolbox" beforeDir="false" afterPath="$PROJECT_DIR$/hiivemdptoolbox" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hiivemdptoolbox/hiive/mdptoolbox/mdp.py" beforeDir="false" afterPath="$PROJECT_DIR$/hiivemdptoolbox/hiive/mdptoolbox/mdp.py" afterDir="false" />
     </list>
@@ -99,7 +102,7 @@
       <workItem from="1574252185110" duration="3638000" />
       <workItem from="1574339814697" duration="4988000" />
       <workItem from="1574392424086" duration="34187000" />
-      <workItem from="1574484913429" duration="31984000" />
+      <workItem from="1574484913429" duration="33112000" />
     </task>
     <servers />
   </component>
